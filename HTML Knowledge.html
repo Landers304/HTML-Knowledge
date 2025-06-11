@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HTML Assignment</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      background-color: #f9f9f9;
+    }
+
+    nav ul {
+      list-style-type: none;
+      padding: 0;
+      display: flex;
+      gap: 20px;
+      background-color: #333;
+    }
+
+    nav ul li {
+      padding: 10px;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+    }
+
+    form, table {
+      margin-top: 20px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 10px;
+    }
+
+    table, th, td {
+      border: 1px solid #ccc;
+    }
+
+    th, td {
+      padding: 10px;
+      text-align: left;
+    }
+
+    img.rounded {
+      border-radius: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <nav>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Contact Form -->
+  <form>
+    <h2>Contact Us</h2>
+
+    <label for="name">Name:</label><br />
+    <input type="text" id="name" name="name" required /><br /><br />
+
+    <label for="email">Email:</label><br />
+    <input type="email" id="email" name="email" required /><br /><br />
+
+    <label for="message">Message:</label><br />
+    <textarea id="message" name="message" rows="4" required></textarea><br /><br />
+
+    <!-- Radio Buttons -->
+    <p>How did you find us?</p>
+    <input type="radio" id="google" name="referral" value="Google" />
+    <label for="google">Google</label><br />
+    <input type="radio" id="social" name="referral" value="Social Media" />
+    <label for="social">Social Media</label><br /><br />
+
+    <input type="submit" value="Submit" />
+  </form>
+
+  <!-- Product Table -->
+  <h2>Product List</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>Product Name</th>
+        <th>Price ($)</th>
+        <th>Quantity</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Widget A</td>
+        <td>19.99</td>
+        <td>5</td>
+      </tr>
+      <tr>
+        <td>Widget B</td>
+        <td>29.99</td>
+        <td>3</td>
+      </tr>
+      <tr>
+        <td>Widget C</td>
+        <td>9.99</td>
+        <td>10</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- Images Section -->
+  <h2>Our Product Images</h2>
+  <!-- Standard Placeholder Image -->
+  <img src="https://ultimateelementor.com/wp-content/uploads/2018/05/woo-products-sale-flash.png" alt="Placeholder Image" /><br /><br />
+
+  <!-- Bonus: Image with Rounded Border -->
+  <img src="https://ultimateelementor.com/wp-content/uploads/2018/05/woo-products-sale-flash.png" alt="Rounded Image" class="rounded" />
+
+</body>
+</html>
